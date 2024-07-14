@@ -85,9 +85,9 @@ console.log(createImg);
 ulEl.addEventListener('click', event => {
   event.preventDefault();
 
-  if (event.target.nodeName === 'img') {
-    console.log(event.target.dataset.source);
-  }
+  if (event.target.nodeName === 'IMG') {
+  return;
+ }
 
   const largeImgUrl = event.target.dataset.source;
 
